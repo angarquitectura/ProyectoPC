@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} % Para entornos matemáticos, aunque no estrictamente necesario para esta tabla.
+\usepackage{graphicx} % Para incluir gráficos si fuera necesario.
+\usepackage{booktabs} % Para tablas más profesionales (toprule, midrule, bottomrule).
+\usepackage{hyperref} % Para enlaces clicables en las referencias URL.
+\usepackage{geometry} % Para configurar márgenes.
+ \geometry{a4paper, margin=1in} % Márgenes de 1 pulgada
+
+\title{Estación de Trabajo para Simulación Científica: Aplicación a la Climatología}
+\author{Angel Besteiro}
+\date{\today} % Esto pondrá la fecha actual de compilación
+
+\begin{document}
+
+\maketitle % Esto genera el título y el autor/fecha.
+
+\section*{Introducción al Proyecto}
+
+El desarrollo de avances en distintas áreas trae consigo números y planteamientos que probar. Normalmente, estos se resuelven y analizan con pruebas de campo o el método de prueba y error. El problema es que, en ciertas situaciones y con determinados problemas, realizar muchas pruebas en el mundo real puede ser costoso, poco práctico y profundamente ineficiente.
+
+He querido orientar aún más el tema a la \textbf{climatología}, ya que no veo un mejor ejemplo de una rama que necesite y se complemente tan bien con simulaciones a escala por computadora. El hecho de revisar los cielos de determinados lugares sin que siquiera hayan pasado horas es crucial. Los modelos climatológicos actuales cumplen con lo siguiente:
+\begin{itemize}
+    \item \textbf{Modelos matemáticos:} Utilizan ecuaciones complejas para replicar la física atmosférica.
+    \item \textbf{Equipo Adecuado:} Ejecutan cálculos intensivos para procesar grandes cantidades de datos.
+    \item \textbf{Datos de entrada:} Información meteorológica obtenida de satélites, radares y estaciones meteorológicas.
+    \item \textbf{Visualización:} Herramientas que permiten analizar y representar gráficamente los resultados.
+\end{itemize}
+
+---
+
+\section*{Configuración de la Estación de Trabajo}
+
+A continuación, se detalla la selección de componentes para la estación de trabajo orientada a la simulación científica, específicamente diseñada para tareas de climatología, bajo un presupuesto de \$2500, buscando optimizar al máximo la inversión.
+
+\begin{table}[h!]
+    \centering
+    \caption{Componentes de la Estación de Trabajo para Simulación Científica}
+    \label{tab:pc_components}
+    \begin{tabular}{llc}
+        \toprule
+        \textbf{Componente} & \textbf{Precio (USD)} & \textbf{Referencia} \\
+        \midrule
+        GPU (Gigabyte GeForce RTX 4070 Ti SUPER 16GB) & \$1035 & \href{https://www.sigmatiendas.com}{sigmatiendas.com} \\
+        CPU (AMD Ryzen 9 9900X) & \$419 & \href{https://www.antonline.com}{antonline.com} \\
+        RAM (128GB DDR5) & \$250 & \href{https://www.amazon.com}{amazon.com} \\
+        Disipador (ARCTIC Liquid Freezer III 360) & \$118 & \href{https://www.amazon.com}{amazon.com} \\
+        Placa Base (ASUS TUF Gaming B650-PLUS WIFI) & \$250 & \href{https://www.amazon.com}{amazon.com} \\
+        SSD Principal (Western Digital SN850X 2TB NVMe) & \$160 & \href{https://www.westerndigital.com}{westerndigital.com} \\
+        SSD Secundario (Crucial P5 Plus 1TB NVMe) & \$90 & \href{https://www.pccomponentes.com}{pccomponentes.com} \\
+        Fuente de Poder (MSI MPG A850G 850W) & \$175 & \href{https://www.amazon.com}{amazon.com} \\
+        \midrule
+        \textbf{Total Estimado} & \textbf{\$2497} & \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\end{document}
